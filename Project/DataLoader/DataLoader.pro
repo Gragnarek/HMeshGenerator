@@ -41,16 +41,14 @@ LIBS += -lboost_timer
 LIBS += -lboost_thread
 
 SOURCES += ../../SRC/mainDataLoader.cpp \
-           ../../SRC/DataLoader/*.cpp \
-    ../../SRC/Generator/DataType/point.cpp \
-    ../../SRC/Generator/DataType/vector.cpp \
-    ../../SRC/Generator/DataType/point3d.cpp \
-    ../../SRC/Generator/DataType/vector3d.cpp
+           ../../SRC/Generator/DataType/point.cpp \
+           ../../SRC/Generator/DataType/vector.cpp \
+           ../../SRC/Generator/DataType/point3d.cpp \
+           ../../SRC/Generator/DataType/vector3d.cpp
 
-HEADERS += ../../SRC/DataLoader/*.h \
-    ../../SRC/Generator/DataType/point.h \
-    ../../SRC/Generator/DataType/vector.h \
-    ../../SRC/Generator/DataType/point3d.h \
-    ../../SRC/Generator/DataType/vector3d.h
+HEADERS += ../../SRC/Generator/DataType/point.h \
+           ../../SRC/Generator/DataType/vector.h \
+           ../../SRC/Generator/DataType/point3d.h \
+           ../../SRC/Generator/DataType/vector3d.h
 
 #FORMS += ../../SRC/DataLoader/Forms/*.ui

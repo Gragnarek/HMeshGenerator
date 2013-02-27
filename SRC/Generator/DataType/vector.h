@@ -2,9 +2,10 @@
 #define VECTOR_H
 
 #include "../../SRC/Generator/DataType/point.h"
-#include <ostream>
+#include <iostream>
+#include <math.h>
 
-float EPSILON = 0.000001;
+#define EPSILON 0.000001
 
 class Vector: public virtual Point
 {
@@ -33,7 +34,7 @@ public:
 
     float abs () const;
 
-    friend ostream& operator << (ostream& stream, Vector& vec);
+    friend std::ostream& operator << (std::ostream& stream, Vector& vec);
 
     float getX () {return x;}
     float getY () {return y;}

@@ -2,8 +2,10 @@
 #define VECTOR3D_H
 
 #include "../../SRC/Generator/DataType/point3d.h"
+#include <iostream>
+#include <math.h>
 
-float EPSILON = 0.000001;
+#define EPSILON 0.000001
 
 class Vector3D: public virtual Point3D
 {
@@ -33,7 +35,7 @@ public:
 
     float abs () const;
 
-    friend ostream& operator << (ostream& stream, Vector3D& vec);
+    friend std::ostream& operator << (std::ostream& stream, Vector3D& vec);
 
     float getX () {return this->x;}
     float getY () {return this->y;}

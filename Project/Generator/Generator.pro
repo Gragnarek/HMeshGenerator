@@ -43,7 +43,7 @@ LIBS += -lboost_timer
 LIBS += -lboost_thread
 
 SOURCES += ../../SRC/mainGenerator.cpp \
-           ../../SRC/Generator/*.cpp
+           ../../SRC/Generator/DataType/*.cpp
 
 HEADERS += ../../SRC/Generator/*.h
 

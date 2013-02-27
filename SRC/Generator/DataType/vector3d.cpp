@@ -1,22 +1,22 @@
 #include "vector3d.h"
 
 Vector3D::Vector3D():
-    x(0), y(0), z(0)
+    Point3D()
 {
 }
 
 Vector3D::Vector3D(float x_, float y_):
-    x(x_), y(y_), z(0)
+    Point3D(x_, y_, 0)
 {
 }
 
 Vector3D::Vector3D(float x_, float y_, float z_):
-    x(x_), y(y_), z(z_)
+    Point3D(x_, y_, z_)
 {
 }
 
 Vector3D::Vector3D(const Vector3D &vec):
-    x(vec.x), y(vec.y), z(vec.z)
+    Point3D(vec)
 {
 }
 
@@ -82,14 +82,14 @@ void Vector3D::operator /=(float num)
 
 bool Vector3D::operator ==(const Vector3D &vec) const
 {
-    Vector3D v = (&this) - vec;
+    Vector3D v = (*this) - vec;
     if (v.abs() < EPSILON)
     {
-        true;
+        return true;
     }
     else
     {
-        false;
+        return false;
     }
 }
 
@@ -103,7 +103,7 @@ float Vector3D::abs() const
     return sqrt(this->x*this->x + this->y*this->y + this->z*this->z);
 }
 
-ostream &Vector3D::operator <<(ostream &stream, Vector3D &vec)
+std::ostream& operator <<(std::ostream &stream, Vector3D &vec)
 {
     stream << vec.getX() << ", " << vec.getY() << ", " << vec.getZ();
     return stream;
