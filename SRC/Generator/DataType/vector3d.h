@@ -5,7 +5,10 @@
 #include <iostream>
 #include <math.h>
 
-#define EPSILON 0.000001
+namespace VECTOR3D
+{
+    float EPSILON = 0.000001;
+}
 
 class Vector3D: public virtual Point3D<float>
 {
