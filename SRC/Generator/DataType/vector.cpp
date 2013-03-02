@@ -76,7 +76,7 @@ void Vector::operator /=(float num)
 bool Vector::operator ==(const Vector &vec) const
 {
     Vector v = (*this) - vec;
-    if (v.abs() < EPSILON)
+    if (v.abs() < VECTOR::EPSILON)
     {
         return true;
     }

@@ -13,6 +13,8 @@ public:
     Rib(int nrib_);
     Rib(int dot1, int dot2, int nrib_);
     Rib(const Rib& rib);
+
+    ~Rib();
 };
 
 #endif // RIB_H

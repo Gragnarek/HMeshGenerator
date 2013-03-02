@@ -83,7 +83,7 @@ void Vector3D::operator /=(float num)
 bool Vector3D::operator ==(const Vector3D &vec) const
 {
     Vector3D v = (*this) - vec;
-    if (v.abs() < EPSILON)
+    if (v.abs() < VECTOR3D::EPSILON)
     {
         return true;
     }
@@ -107,4 +107,8 @@ std::ostream& operator <<(std::ostream &stream, Vector3D &vec)
 {
     stream << vec.getX() << ", " << vec.getY() << ", " << vec.getZ();
     return stream;
+}
+
+Vector3D::~Vector3D()
+{
 }

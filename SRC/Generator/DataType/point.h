@@ -12,6 +12,8 @@ public:
     Point();
     Point(T x_, T y_);
     Point(const Point<T>& p);
+
+    ~Point();
 };
 
 template<class T>
@@ -29,6 +31,11 @@ Point<T>::Point(T x_, T y_):
 template<class T>
 Point<T>::Point(const Point<T> &p):
     x(p.x), y(p.y)
+{
+}
+
+template<class T>
+Point<T>::~Point()
 {
 }
 

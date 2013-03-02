@@ -19,3 +19,7 @@ Rib::Rib(const Rib &rib):
     Point((Point)rib), nrib(rib.nrib)
 {
 }
+
+Rib::~Rib()
+{
+}

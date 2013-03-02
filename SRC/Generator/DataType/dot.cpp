@@ -24,3 +24,7 @@ Dot::Dot(const Dot &dot):
     Point3D((Point3D)dot), ndot(dot.ndot)
 {
 }
+
+Dot::~Dot()
+{
+}

@@ -14,6 +14,8 @@ public:
     Point3D(T x_, T y_);
     Point3D(T x_, T y_, T z_);
     Point3D(const Point3D<T>& p);
+
+    ~Point3D();
 };
 
 template<class T>
@@ -37,6 +39,11 @@ Point3D<T>::Point3D(T x_, T y_, T z_):
 template<class T>
 Point3D<T>::Point3D(const Point3D<T> &p):
     x(p.x), y(p.y), z(p.z)
+{
+}
+
+template<class T>
+Point3D<T>::~Point3D()
 {
 }
 

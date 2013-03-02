@@ -19,3 +19,7 @@ TriangularFace::TriangularFace(const TriangularFace &tface):
     Point3D((Point3D)tface), nface(tface.nface)
 {
 }
+
+TriangularFace::~TriangularFace()
+{
+}

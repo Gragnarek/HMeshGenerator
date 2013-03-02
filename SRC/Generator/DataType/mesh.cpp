@@ -3,3 +3,7 @@
 Mesh::Mesh()
 {
 }
+
+Mesh::~Mesh()
+{
+}

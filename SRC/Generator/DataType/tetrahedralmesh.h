@@ -21,7 +21,7 @@ protected:
 public:
     TetrahedralMesh();
 
-    static TetrahedralMesh JsonParser(const std::wstring str);
+    static TetrahedralMesh JsonParser(const std::wstring& str);
     static std::wstring JsonCoder(const TetrahedralMesh& tmesh);
 
     ~TetrahedralMesh();

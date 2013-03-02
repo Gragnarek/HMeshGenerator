@@ -14,6 +14,8 @@ public:
     Dot(float x_, float y_, int ndot_);
     Dot(float x_, float y_, float z_, int ndot_);
     Dot(const Dot& dot);
+
+    ~Dot();
 };
 
 #endif // DOT_H

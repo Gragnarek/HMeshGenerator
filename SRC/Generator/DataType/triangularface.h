@@ -13,6 +13,8 @@ public:
     TriangularFace(int nface_);
     TriangularFace(int dot1, int dot2, int dot3, int nface_);
     TriangularFace(const TriangularFace& tface);
+
+    ~TriangularFace();
 };
 
 #endif // TRIANGULARFACE_H
