@@ -2,6 +2,7 @@
 # Project created by QtCreator
 # -------------------------------------------------
 QT += gui
+
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = DataLoader
@@ -21,10 +22,6 @@ QMAKE_CXXFLAGS_WARN_ON += -Wno-reorder
 
 INCLUDEPATH += "../../"
 
-LIBS += -L"/usr/externallib/lib/"
-INCLUDEPATH += "/usr/externallib/include/"
-QMAKE_CXXFLAGS += -isystem "/usr/externallib/include/"
-
 LIBS += -lboost_serialization
 LIBS += -lboost_iostreams
 LIBS += -lboost_graph
@@ -40,15 +37,9 @@ LIBS += -lboost_system
 LIBS += -lboost_timer
 LIBS += -lboost_thread
 
-SOURCES += ../../SRC/mainDataLoader.cpp \
-           ../../SRC/Generator/DataType/point.cpp \
-           ../../SRC/Generator/DataType/vector.cpp \
-           ../../SRC/Generator/DataType/point3d.cpp \
-           ../../SRC/Generator/DataType/vector3d.cpp
+SOURCES += ../../SRC/Generator/DataType/*.cpp \
+           ../../SRC/mainDataLoader.cpp
 
-HEADERS += ../../SRC/Generator/DataType/point.h \
-           ../../SRC/Generator/DataType/vector.h \
-           ../../SRC/Generator/DataType/point3d.h \
-           ../../SRC/Generator/DataType/vector3d.h
+HEADERS += ../../SRC/Generator/DataType/*.cpp
 
 #FORMS += ../../SRC/DataLoader/Forms/*.ui

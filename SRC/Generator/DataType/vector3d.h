@@ -7,7 +7,7 @@
 
 #define EPSILON 0.000001
 
-class Vector3D: public virtual Point3D
+class Vector3D: public virtual Point3D<float>
 {
 public:
     Vector3D();

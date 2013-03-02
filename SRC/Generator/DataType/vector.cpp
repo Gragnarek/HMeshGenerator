@@ -1,12 +1,15 @@
 #include "vector.h"
 
-Vector::Vector():
-    Point()
+Vector::Vector()
 {
 }
 
-Vector::Vector(int x_, int y_):
-    Point(x_, y_)
+Vector::~Vector()
+{
+}
+
+Vector::Vector(float x_, float y_):
+    Point<float>(x_, y_)
 {
 }
 

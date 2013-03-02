@@ -14,7 +14,6 @@ UI_DIR = ../../BIN/Generator/.ui
 
 TEMPLATE = app
 
-
 ########################### Warning options #####################################
 
 QMAKE_CXXFLAGS_WARN_ON += -Werror
@@ -22,10 +21,6 @@ QMAKE_CXXFLAGS_WARN_ON += -Wno-reorder
 #################################################################################
 
 INCLUDEPATH += "../../"
-
-LIBS += -L"/usr/externallib/lib/"
-INCLUDEPATH += "/usr/externallib/include/"
-QMAKE_CXXFLAGS += -isystem "/usr/externallib/include/"
 
 LIBS += -lboost_serialization
 LIBS += -lboost_iostreams
@@ -45,6 +40,6 @@ LIBS += -lboost_thread
 SOURCES += ../../SRC/mainGenerator.cpp \
            ../../SRC/Generator/DataType/*.cpp
 
-HEADERS += ../../SRC/Generator/*.h
+HEADERS += ../../SRC/Generator/DataType/*.h
 
 #FORMS += ../../SRC/Generator/Forms/*.ui

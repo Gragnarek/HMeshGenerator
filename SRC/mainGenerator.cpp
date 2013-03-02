@@ -1,7 +1,11 @@
-#include "../SRC/Generator/DataType/vector.h"
-#include "../SRC/Generator/DataType/vector3d.h"
+#include <QApplication>
 
-int main (int , char** )
+//#include "../SRC/Generator/DataType/vector.h"
+//#include "../SRC/Generator/DataType/vector3d.h"
+
+int main (int argc, char** argv)
 {
-    return 0;
+    QApplication a(argc, argv);
+
+    return a.exec();
 }

@@ -7,11 +7,11 @@
 
 #define EPSILON 0.000001
 
-class Vector: public virtual Point
+class Vector: public virtual Point<float>
 {
 public:
     Vector();
-    Vector(int x_, int y_);
+    Vector(float x_, float y_);
     Vector(const Vector& vec);
 
     Vector operator + (const Vector& vec) const;
@@ -38,6 +38,8 @@ public:
 
     float getX () {return x;}
     float getY () {return y;}
+
+    ~Vector();
 };
 
 #endif // VECTOR_H
