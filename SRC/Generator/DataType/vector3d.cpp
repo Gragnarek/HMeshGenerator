@@ -16,7 +16,7 @@ Vector3D::Vector3D(float x_, float y_, float z_):
 }
 
 Vector3D::Vector3D(const Vector3D &vec):
-    Point3D(vec)
+    Point3D((Point3D)vec)
 {
 }
 
@@ -83,7 +83,7 @@ void Vector3D::operator /=(float num)
 bool Vector3D::operator ==(const Vector3D &vec) const
 {
     Vector3D v = (*this) - vec;
-    if (v.abs() < VECTOR3D::EPSILON)
+    if (v.abs() < EPSILON)
     {
         return true;
     }

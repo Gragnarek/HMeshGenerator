@@ -40,6 +40,6 @@ LIBS += -lboost_thread
 SOURCES += ../../SRC/Generator/DataType/*.cpp \
            ../../SRC/mainDataLoader.cpp
 
-HEADERS += ../../SRC/Generator/DataType/*.cpp
+HEADERS += ../../SRC/Generator/DataType/*.h
 
 #FORMS += ../../SRC/DataLoader/Forms/*.ui

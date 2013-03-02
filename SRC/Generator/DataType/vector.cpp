@@ -9,12 +9,12 @@ Vector::~Vector()
 }
 
 Vector::Vector(float x_, float y_):
-    Point<float>(x_, y_)
+    Point(x_, y_)
 {
 }
 
 Vector::Vector(const Vector &vec):
-    Point(vec)
+    Point((Point)vec)
 {
 }
 
@@ -76,7 +76,7 @@ void Vector::operator /=(float num)
 bool Vector::operator ==(const Vector &vec) const
 {
     Vector v = (*this) - vec;
-    if (v.abs() < VECTOR::EPSILON)
+    if (v.abs() < EPSILON)
     {
         return true;
     }

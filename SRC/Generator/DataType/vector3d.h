@@ -5,12 +5,9 @@
 #include <iostream>
 #include <math.h>
 
-namespace VECTOR3D
-{
-    float EPSILON = 0.000001;
-}
+static const float EPSILON = 0.000001;
 
-class Vector3D: public virtual Point3D<float>
+class Vector3D : public virtual Point3D<float>
 {
 public:
     Vector3D();

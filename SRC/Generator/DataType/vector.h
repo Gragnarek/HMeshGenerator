@@ -5,12 +5,9 @@
 #include <iostream>
 #include <math.h>
 
-namespace VECTOR
-{
-    float EPSILON = 0.000001;
-}
+static const float EPSILON = 0.000001;
 
-class Vector: public virtual Point<float>
+class Vector : public virtual Point<float>
 {
 public:
     Vector();
